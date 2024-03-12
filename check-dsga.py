@@ -3,9 +3,8 @@ Check datasets assemblies (i.e. fna files) downloaded from NCBI.
 Compares the expected number of contigs and total sequence length vs. what's contained in the file.
 
 Outputs either:
-    1. If no issues found: "No unexpected assemblies found."
+    1. If no issues found, no output (apart from optional verbose mode)
     2. If mismatches are found: Mismatched accession numbers, expected and found values, and filenames
-    3. Any accession number that is not in both the catalog and assembly report
         a. If the associated file is not found, there will be an exception thrown (#TODO handle more gracefully)
         b. n.b. This does not check if there are fna files in the extracted set which do not appear in the catalog or
            assembly data report
@@ -22,8 +21,9 @@ Potential improvements include:
     2. Specifying a custom catalog associating accession numbers with files
        (e.g. for work after flattening, renaming, or otherwise altering the unzipped download)
     3. Specifying a custom set of expected values
-    4. Handling compressed dataset
-    5. Better automated testing
+    4. Report any accession number that is not in both the catalog and assembly report
+    5. Handling compressed dataset
+    6. Better automated testing
 
 contact: joe.e.weaver@gmail.com
 """
