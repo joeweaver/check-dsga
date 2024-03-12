@@ -21,6 +21,11 @@ optional arguments:
   -v, --verbose         Display parsing progress
 ```
 
+## Requires
+
+Python 3.8 (maybe lower), Bioseq, and Pandas.
+Right now this is very much at the 'works on my computer' level of development and I'd appreciate feedback.
+
 ## Current Behaviour
 
 Outputs either:
