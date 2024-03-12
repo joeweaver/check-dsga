@@ -3,10 +3,10 @@
 The NCBI [```datasets```](https://github.com/ncbi/datasets) tool is very handy, but I've noticed that for large datasets some of the FNA files are truncated.  This may be more common when doing a direct download rather than using the ```--dehydrate``` and ```--rehydrate``` workflows.
 
 This script was written to be used immediately after unarchiving a ```datasets``` download.  It:
-    1. Scans the directory tree for the associated ```assembly_data_report.jsonl``` and ```dataset_catalog.json``` files
-    2. Sets up expectations for the total number of sequences and total sequence length per assembly
-    3. Compares those expecations to what's in the acutal downloaded files
-    4. Complains about any mismatches
+1. Scans the directory tree for the associated ```assembly_data_report.jsonl``` and ```dataset_catalog.json``` files
+2. Sets up expectations for the total number of sequences and total sequence length per assembly
+3. Compares those expecations to what's in the acutal downloaded files
+4. Complains about any mismatches
 
 ## Usage
 ```
